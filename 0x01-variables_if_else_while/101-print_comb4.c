@@ -11,7 +11,7 @@ int main(void)
 {
 	int d, p, q;
 
-	for (d = '0' ; d < '7' ; d++)
+	for (d = '0' ; d <= '7' ; d++)
 	{
 		for (p = d + 1; p <= '8'; p++)
 		{
@@ -22,14 +22,18 @@ int main(void)
 					putchar(d);
 					putchar(p);
 					putchar(q);
-					if (d == '7' && p == '8')
-						continue;
-					putchar(',');
-					putchar(' ');
+					if (d == '7' && p == '8' && q == '9')
+					{
+					putchar('\n');
+					}
+					else
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
 	}
-	putchar('\n');
-	return (0);
+return (0);
 }
