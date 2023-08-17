@@ -1,15 +1,16 @@
 #include "main.h"
 
 /**
- * main - main function 
+ * print_alphabet - print a to z
  *
- * Return: always 0
+ * Return:void
  */
 
 void print_alphabet(void)
 {
-char ch;
-for (ch = 'a'; ch <= 'z'; ch++)
-	_putchar(ch);
-_putchar('\n');
+	char ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++)
+		_putchar(ch);
+	_putchar('\n');
 }
